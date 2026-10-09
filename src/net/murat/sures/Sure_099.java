@@ -1,0 +1,58 @@
+package net.murat.sures;
+
+final
+public class Sure_099
+extends Object
+implements java.io.Serializable, KSure
+{
+
+	private String allSure="";
+
+	private final String [] ayts =
+	{
+		"\u0628\u0633\u0645 \u0627\u0644\u0644\u0647 \u0627\u0644\u0631\u062D\u0645\u0646 \u0627\u0644\u0631\u062D\u064A\u0645",
+		"\u0627\u0630\u0627 \u0632\u0644\u0632\u0644\u062A \u0627\u0644\u0627\u0631\u0636 \u0632\u0644\u0632\u0627\u0644\u0647\u0627 (\u0661)",
+		"\u0648\u0627\u062E\u0631\u062C\u062A \u0627\u0644\u0627\u0631\u0636 \u0627\u062B\u0642\u0627\u0644\u0647\u0627 (\u0662)",
+		"\u0648\u0642\u0627\u0644 \u0627\u0644\u0627\u0646\u0633\u0627\u0646 \u0645\u0627 \u0644\u0647\u0627 (\u0663)",
+		"\u064A\u0648\u0645\u0626\u0630 \u062A\u062D\u062F\u0651\u062B \u0627\u062E\u0628\u0627\u0631\u0647\u0627 (\u0664)",
+		"\u0628\u0627\u0646\u0651 \u0631\u0628\u0651\u0643 \u0627\u0648\u062D\u0670\u0649 \u0644\u0647\u0627 (\u0665)",
+		"\u064A\u0648\u0645\u0626\u0630 \u064A\u0635\u062F\u0631 \u0627\u0644\u0646\u0651\u0627\u0633 \u0627\u0634\u062A\u0627\u062A\u0627 \u0644\u064A\u0631\u0648\u0627 \u0627\u0639\u0645\u0627\u0644\u0647\u0645 (\u0666)",
+		"\u0641\u0645\u0646 \u064A\u0639\u0645\u0644 \u0645\u062B\u0642\u0627\u0644 \u0630\u0631\u0651\u0629 \u062E\u064A\u0631\u0627 \u064A\u0631\u0647 (\u0667)",
+		"\u0648\u0645\u0646 \u064A\u0639\u0645\u0644 \u0645\u062B\u0642\u0627\u0644 \u0630\u0631\u0651\u0629 \u0634\u0631\u0651\u0627 \u064A\u0631\u0647 (\u0668)",
+	};
+
+	public Sure_099 () {}
+
+	public String getName ()
+	{
+		return "Zilzal";
+	}
+
+	public void generate ()
+	{
+		StringBuffer sb=new StringBuffer ();
+
+		final int len=ayts.length;
+
+		for (int i=KSure.CERO; i<len; i++)
+		{
+			sb.append (ayts [i]);
+			sb.append (KSure.NL);
+		}
+
+		String rtt=sb.toString ();
+
+		allSure=rtt;
+	}
+
+	public String getAllSure ()
+	{
+		return allSure;
+	}
+
+	public String toString ()
+	{
+		return (getName ());
+	}
+
+}//class end

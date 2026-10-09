@@ -1,0 +1,53 @@
+package net.murat.sures;
+
+final
+public class Sure_110
+extends Object
+implements java.io.Serializable, KSure
+{
+
+	private String allSure="";
+
+	private final String [] ayts =
+	{
+		"\u0628\u0633\u0645 \u0627\u0644\u0644\u0647 \u0627\u0644\u0631\u062D\u0645\u0646 \u0627\u0644\u0631\u062D\u064A\u0645",
+		"\u0627\u0630\u0627 \u062C\u0653\u0627\u0621 \u0646\u0635\u0631 \u0627\u0644\u0644\u0651\u0670\u0647 \u0648\u0627\u0644\u0641\u062A\u062D (\u0661)",
+		"\u0648\u0631\u0627\u064A\u062A \u0627\u0644\u0646\u0651\u0627\u0633 \u064A\u062F\u062E\u0644\u0648\u0646 \u0641\u064A \u062F\u064A\u0646 \u0627\u0644\u0644\u0651\u0670\u0647 \u0627\u0641\u0648\u0627\u062C\u0627 (\u0662)",
+		"\u0641\u0633\u0628\u0651\u062D \u0628\u062D\u0645\u062F \u0631\u0628\u0651\u0643 \u0648\u0627\u0633\u062A\u063A\u0641\u0631\u0647 \u0627\u0646\u0651\u0647 \u0643\u0627\u0646 \u062A\u0648\u0651\u0627\u0628\u0627 (\u0663)",
+	};
+
+	public Sure_110 () {}
+
+	public String getName ()
+	{
+		return "Nasr";
+	}
+
+	public void generate ()
+	{
+		StringBuffer sb=new StringBuffer ();
+
+		final int len=ayts.length;
+
+		for (int i=KSure.CERO; i<len; i++)
+		{
+			sb.append (ayts [i]);
+			sb.append (KSure.NL);
+		}
+
+		String rtt=sb.toString ();
+
+		allSure=rtt;
+	}
+
+	public String getAllSure ()
+	{
+		return allSure;
+	}
+
+	public String toString ()
+	{
+		return (getName ());
+	}
+
+}//class end

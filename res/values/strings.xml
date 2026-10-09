@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="program_name">Kur\'an</string>
+    <string name="set">اعدادات</string>
+    <string name="hifz">احفظ</string>
+    <string name="help">سوَر</string>
+    <string name="write">أكتب</string>
+    <string name="exit">أخرج</string>
+    <string name="hint">رقم السورة من ١ إلى ١١٤</string>
+</resources>

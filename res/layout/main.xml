@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/bga">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/exit_button"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/doss"
+            android:background="@drawable/bshape"
+            android:textColor="@color/rshape"
+            android:textSize="@dimen/diezx"
+            android:text="@string/exit"/>
+
+        <Button
+            android:id="@+id/help_button"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/doss"
+            android:background="@drawable/bshape"
+            android:textColor="@color/rshape"
+            android:textSize="@dimen/diezx"
+            android:text="@string/help"/>
+
+        <Button
+            android:id="@+id/hifz_button"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/doss"
+            android:background="@drawable/bshape"
+            android:textColor="@color/rshape"
+            android:textSize="@dimen/diezx"
+            android:text="@string/hifz"/>
+
+        <Button
+            android:id="@+id/set_button"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/doss"
+            android:background="@drawable/bshape"
+            android:textColor="@color/rshape"
+            android:textSize="@dimen/diezx"
+            android:text="@string/set"/>
+
+        <Button
+            android:id="@+id/write_button"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/doss"
+            android:background="@drawable/bshape"
+            android:textColor="@color/rshape"
+            android:textSize="@dimen/diezx"
+            android:text="@string/write"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/enter_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:maxLength="7"
+        android:inputType="phone"
+        android:hint="@string/hint"
+        android:layout_margin="@dimen/doss"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:textSize="@dimen/diez"
+        android:textColor="@color/bluB"/>
+
+	<net.murat.uikit.MEditor
+		android:id="@+id/tv"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:layout_margin="@dimen/doss"
+		android:background="@drawable/border"
+		android:gravity="top|start"
+		android:textSize="@dimen/vctr"
+		android:textColor="@color/bluB"
+		android:paddingLeft="4dp"
+		android:paddingTop="4dp"
+		android:paddingBottom="4dp"
+		android:paddingRight="56dp"
+		android:scrollbars="none"
+		android:textIsSelectable="true"/>
+
+</LinearLayout>

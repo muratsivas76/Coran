@@ -1,0 +1,20 @@
+Default
+0
+22F
+#FFFFFFFF
+#FF000000
+##########
+1. Line: Monospace, Serif, SansSerif, Default (One of them without comma)
+2. Line: 0, 1, 2, 3 [normal, bold, italic, bold_italic] (One digit of 0-3 without comma)
+3. Line: Font size float (Example: 22F)
+4. Line: Background color (#AARRGGBB)
+5. Line: Foreground color (#AARRGGBB)
+##########
+Original file is above entre ########## lines:
+##########
+Default
+0
+22F
+#FFFFFFFF
+#FF000000
+##########
